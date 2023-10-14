@@ -1,0 +1,91 @@
+@use '../../sass/_variables'
+@use '../../sass/_mixins'
+
+.main-container
+   height: 100vh
+   width: 100%
+
+   .main-home-top
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding-top:30px 
+      background-image: url('../../assets/images/pattern-bg-desktop.png')
+      background-size: cover 
+      background-repeat: no-repeat
+      height: 35vh
+
+      h1
+         color: variables.$wihte-color
+
+   .main-home-results
+      background: variables.$wihte-color
+      border-radius:10px
+      left: 50%
+      transform: translate(-50%, 130px )
+      z-index: 9
+      box-shadow: variables.$box-shadow
+      width: 80%
+      position: absolute
+      min-height: 150px
+      justify-content: center
+      display: flex 
+      flex-wrap: wrap
+      padding: 20px
+      gap: 15px
+      @include mixins.mobile
+         width: 90%
+         flex-direction: column
+         align-items: center
+      
+      .res
+         width: 230px
+         top: 0
+         padding: 10px
+         @include mixins.mobile
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+      h3
+         font-size: .75rem
+         color: #5f5f5f
+         font-weight: 900
+         
+
+      p
+         font-weight: 800 
+         border-right: none
+         padding: 10px 30px 10px 0px
+         display: flex
+         align-items: center
+         font-size: 1.2rem
+         border-right: solid 1px #ccc       
+         color: #222
+         @include mixins.mobile
+            padding: 0
+            border: none
+         
+      
+
+
+      span 
+         font-weight: 800 
+         display: block
+         border-right: none
+         padding: 10px 30px 10px 10px
+         display: flex
+         align-items: center
+         font-size: 1.2rem
+         color: #222
+         @include mixins.mobile
+            padding: 0
+            border: none
+
+
+     
+
+
+   
+
+

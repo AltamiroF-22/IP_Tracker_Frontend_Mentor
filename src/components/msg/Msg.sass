@@ -1,0 +1,14 @@
+@use '../../sass/_mixins'
+
+.message
+    width: 300px
+    position: absolute
+    right: 5px
+    top: 5px
+    overflow: hidden
+    @include mixins.mobile
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 0
+        
+    
